@@ -40,6 +40,14 @@ npm run package
 
 Derlenen paketler `release/` klasörüne çıkarılır (`dmg`/`zip` macOS, `nsis`/`portable` Windows, `AppImage`/`deb` Linux).
 
+### macOS Kurulum Notu
+
+Uygulama açık kaynaklıdır ve Apple Developer hesabı ile noter tasdikli (notarized) değildir. GitHub Releases üzerinden `.dmg` dosyasını tarayıcıyla indirdiğinizde macOS Gatekeeper *"hasar görmüş olduğu için açılamıyor"* veya *"geliştiricisi doğrulanamıyor"* uyarısı verirse, uygulamayı **Uygulamalar (`Applications`)** klasörüne taşıdıktan sonra Terminal'de şu komutu çalıştırın:
+
+```bash
+xattr -cr /Applications/Günlük.app
+```
+
 ## Lisans
 
 [MIT](LICENSE)
