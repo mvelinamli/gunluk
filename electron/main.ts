@@ -57,6 +57,7 @@ function createWindow(): void {
     minWidth: 880,
     minHeight: 620,
     title: 'Günlük',
+    icon: path.join(__dirname, '../build/icon.png'),
     titleBarStyle: process.platform === 'darwin' ? 'hiddenInset' : 'default',
     trafficLightPosition: process.platform === 'darwin' ? { x: 18, y: 18 } : undefined,
     webPreferences: {
